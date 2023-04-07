@@ -1,42 +1,69 @@
-
 body {
-  background-color: rgb(11, 104, 224);
-}
-
-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
 }
-img {
+
+#container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#minha-foto {
+  width: 200px;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  margin-bottom: 20px;
 }
 
-.meuNome, .descricao {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-em {
-  color: rgb(67, 138, 83);
-}
-
-.javascript {
-  font-size: 20px;
-}
-
-.sql {
+.descricao {
+  max-width: 600px;
+  text-align: justify;
   font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+#Habilidades {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: bisque;
+  border-radius: 10px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
 }
 
-.react {
-  font-size: 16px;
+li {
+  background-color: rgb(235, 207, 173);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(187, 168, 139, 0.2);
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  transition: all 0.3s ease-in-out;
 }
 
-.bootstrap {
-  font-size: 14px;
+li:hover {
+  transform: translateY(-5px);
 }
 
-.metoAgil {
-  font-size: 12px;
-}
+/* Animação para a foto de perfil */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale
